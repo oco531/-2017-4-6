@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>your score:</p>
+<input type="number" id="mydata" >
+<p id="demo"></p>
+<script>
+function myFunction() {
+    var x=document.getElementById("mydata").value
+    var greeting;
+    if (x < 60) {
+        greeting = "no Good";
+    } else {
+        greeting = "Good";
+    }
+    document.getElementById("result").innerHTML = greeting;
+}
+</script>
+<br>
+<output id="result"></output>
+<button onclick="myFunction()">try</button>
+</body>
+</html>
